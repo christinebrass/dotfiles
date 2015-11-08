@@ -12,6 +12,11 @@ set directory=$HOME/.vim/swapfiles//
 autocmd BufNewFile,BufRead *.js set spell
 map <C-n> :NERDTreeToggle<CR>
 
+" Solarized color scheme
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
