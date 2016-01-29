@@ -3,7 +3,7 @@ filetype plugin indent on
 set t_Co=256
 set nowrap
 set backspace=2
-set expandtab tabstop=4 shiftwidth=4 smarttab softtabstop=4
+set expandtab tabstop=2 shiftwidth=2 smarttab softtabstop=2
 set laststatus=2
 let g:ctrlp_working_path_mode = 'c'
 let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git'
