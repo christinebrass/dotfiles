@@ -59,7 +59,6 @@ install_vimplugins () {
     git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
     git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
     git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
-    git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
   fi
 }
 

@@ -12,14 +12,7 @@ set directory=$HOME/.vim/swapfiles//
 autocmd BufNewFile,BufRead *.js set spell
 map <C-n> :NERDTreeToggle<CR>
 
-" Solarized color scheme
 syntax enable
-colorscheme solarized
-if tolower($ITERM_PROFILE) =~ 'light'
-    set background=light
-else
-    set background=dark
-endif
 
 " Syntastic settings
 set statusline+=%#warningmsg#
