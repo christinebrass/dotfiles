@@ -13,9 +13,6 @@ autocmd BufNewFile,BufRead *.js set spell
 map <C-n> :NERDTreeToggle<CR>
 
 syntax enable
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 
-colorscheme hybrid
 
 " Syntastic settings
 set statusline+=%#warningmsg#
