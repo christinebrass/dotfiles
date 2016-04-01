@@ -50,16 +50,11 @@ setup_gitconfig () {
 }
 
 install_vimplugins () {
-  if ! [ -f ~/.vim/autoload/pathogen.vim ]
+  if ! [ -f ~/.vim/bundle/Vundle.vim ]
   then
-    mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-    git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
-    git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-    git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
-    git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
-    git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   fi
+  vim +PluginInstall +qall
 }
 
 

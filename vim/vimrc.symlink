@@ -1,21 +1,43 @@
-execute pathogen#infect()
+set nocompatible " be iMproved, required by Vundle
+filetype off     " required by Vundle
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim' " required by Vundle
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'mhartington/oceanic-next' " use with oceanic-next-shell
+Plugin 'rizzatti/dash.vim'
+Plugin 'tpope/vim-fugitive'
+call vundle#end()
+
 filetype plugin indent on
+
+" theme
+syntax enable
 set t_Co=256
+colorscheme OceanicNext
+set background=dark
+
 set nowrap
 set backspace=2
 set expandtab tabstop=2 shiftwidth=2 smarttab softtabstop=2
 set laststatus=2
 set number
-let g:ctrlp_working_path_mode = 'c'
-let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git'
-let g:ctrlp_show_hidden = 1
+
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 set directory=$HOME/.vim/swapfiles//
 autocmd BufNewFile,BufRead *.js set spell
 map <C-n> :NERDTreeToggle<CR>
 map <C-t> :SyntasticToggle<CR>
 
-syntax enable
+let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git'
+let g:ctrlp_show_hidden = 1
+let g:airline_theme='oceanicnext'
 
 " Syntastic settings
 set statusline+=%#warningmsg#
