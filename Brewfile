@@ -10,6 +10,7 @@ cask 'google-chrome'
 cask 'slack'
 cask 'vlc'
 cask 'vagrant'
+cask 'iterm2'
 
 brew 'ack'
 brew 'ag'

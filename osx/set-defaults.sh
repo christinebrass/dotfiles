@@ -29,6 +29,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+# Set the Finder prefs for showing hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
