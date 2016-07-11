@@ -21,10 +21,10 @@
     ]
   editor:
     fontFamily: "Menlo"
+    fontSize: 12
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
-    fontSize: 12
   "go-plus":
     goPath: "/Users/christinebrass/Code/go"
   "release-notes":
@@ -36,5 +36,8 @@
       "text.git-commit"
       "text.html.basic"
     ]
+  ".js":
+    whitespace:
+      removeTrailingWhitespace: true
   welcome:
     showOnStartup: false
