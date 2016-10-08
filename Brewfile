@@ -16,7 +16,6 @@ brew 'ack'
 brew 'ag'
 brew 'coreutils'
 brew 'elixir'
-brew 'flow'
 brew 'gnu-sed', args: ['with-default-names']
 brew 'gnu-tar', args: ['with-default-names']
 brew 'gnu-which', args: ['with-default-names']
