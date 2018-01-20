@@ -1,16 +1,16 @@
-set nocompatible " be iMproved, required by Vundle
-filetype off     " required by Vundle
+" required by Vundle
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim' " required by Vundle
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mhartington/oceanic-next' " use with oceanic-next-shell
-Plugin 'rizzatti/dash.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'flowtype/vim-flow'
 call vundle#end()
@@ -41,7 +41,6 @@ let g:flow#autoclose = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -54,11 +53,7 @@ set expandtab tabstop=2 shiftwidth=2 smarttab softtabstop=2
 set laststatus=2
 set number
 
-nnoremap - mzI/*<esc>A*/<esc>`z
-inoremap jk <esc>
-inoremap <esc> <nop>
-
-"Use locally installed flow
+" Use locally installed flow
 let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
 if matchstr(local_flow, "^\/\\w") == ''
   let local_flow= getcwd() . "/" . local_flow
@@ -67,7 +62,7 @@ if executable(local_flow)
   let g:flow#flowpath = local_flow
 endif
 
-"Use locally installed eslint
+" Use locally installed eslint
 let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
 if matchstr(local_eslint, "^\/\\w") == ''
   let local_eslint= getcwd() . "/" . local_eslint
