@@ -41,8 +41,8 @@ done
 unset config_files
 
 # Base16 Shell
-#BASE16_SHELL="$HOME/.dotfiles/iterm/oceanic-next-shell/oceanic-next.dark.sh"
-#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+BASE16_SHELL="$HOME/.dotfiles/iterm/oceanic-next-shell/oceanic-next.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

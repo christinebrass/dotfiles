@@ -1,14 +1,10 @@
 #!/bin/sh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Install nvm if it doesn't exist
-if [[ ! "$(command -v nvm)" =~ nvm* ]]
+# Install n if it doesn't exist (assumes node already globally installed)
+if [[ ! "$(command -v n)" =~ n* ]]
 then
-  echo "  Installing nvm for you."
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+  echo "  Installing n (node manager) for you."
+  npm install -g n 
 fi
 
 exit 0
