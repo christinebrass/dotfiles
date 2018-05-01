@@ -33,6 +33,7 @@ git_prompt_info () {
  echo "${ref#refs/heads/}"
 }
 
+# Can be very *slow* with many unapplied upstream commits
 unpushed () {
   $git cherry -v @{upstream} 2>/dev/null
 }
@@ -71,7 +72,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
