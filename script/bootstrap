@@ -49,15 +49,6 @@ setup_gitconfig () {
   fi
 }
 
-install_vimplugins () {
-  if ! [ -f ~/.vim/bundle/Vundle.vim ]
-  then
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  fi
-  vim +PluginInstall +qall
-}
-
-
 link_file () {
   local src=$1 dst=$2
 
@@ -147,7 +138,6 @@ install_dotfiles () {
 
 setup_gitconfig
 install_dotfiles
-install_vimplugins
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
