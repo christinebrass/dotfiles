@@ -50,5 +50,3 @@ PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
 BASE16_SHELL="$HOME/.dotfiles/iterm/oceanic-next-shell/oceanic-next.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
