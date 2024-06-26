@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# Install nvm if it doesn't exist
-if [[ ! "$(command -v nvm)" =~ nvm* ]]
+# Install pnpm if it doesn't exist
+if [[ ! "$(command -v pnpm)" =~ pnpm* ]]
 then
-  echo "  Installing nvm for you."
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+  echo "  Installing pnpm for you."
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
 fi
 
 exit 0

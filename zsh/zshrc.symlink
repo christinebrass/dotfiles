@@ -45,3 +45,11 @@ PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/opt/gnu-which/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/christine/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
