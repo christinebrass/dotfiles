@@ -7,4 +7,7 @@ then
   curl -fsSL https://get.pnpm.io/install.sh | sh -
 fi
 
+
+pnpm env use -g lts
+
 exit 0

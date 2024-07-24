@@ -1,0 +1,2 @@
+# poetry setup
+fpath+=~/.zfunc
